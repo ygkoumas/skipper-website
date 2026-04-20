@@ -13,9 +13,9 @@
 body {
   font-family: "Work Sans", Arial, sans-serif;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 21px;
   line-height: 1.6;
-  color: #828282;
+  color: #555;
   background: #fff;
 }
 
@@ -52,14 +52,18 @@ a {
   -o-transition: 0.4s;
   transition: 0.4s;
 }
-a:hover, a:active, a:focus {
+a:hover, a:active {
   color: #EA9215;
   outline: none;
   text-decoration: none;
 }
 
+a:focus {
+  text-decoration: none;
+}
+
 p {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 #fh5co-explore p:last-child {
   margin-top: 35px;
@@ -90,10 +94,10 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-header h1 span, #fh5co-header h2 span , .fh5co-nav {
 background: #00000055;
 }
-#about-page .fh5co-nav {
+#light-page .fh5co-nav {
 background: #EEEC;
 }
-#about-page #fh5co-header h1 span, #about-page  #fh5co-header h2 span {
+#light-page #fh5co-header h1 span, #light-page  #fh5co-header h2 span {
 background: #EEEA;
 color: #E78800;
 }
@@ -162,26 +166,26 @@ color: #E78800;
 #fh5co-header h1 span {
   text-shadow:  0px 0px 2px #000, 0px 0px 1px #000, 0px 0px 1px #000, 0px 0px 1px #000, 0px 0px 3px #000 , 0px 0px 1px #000, 0px 0px 1px #000, 0px 0px 2px #000, 0px 0px 2px #000, 0px 0px 1px #000, 0px 0px 1px #000, 0px 0px 1px #000, 0px 0px 3px #000 , 0px 0px 3px #000, 0px 0px 1px #000, 0px 0px 1px #000, 0px 0px 2px #000;
 }
-.about-page .fh5co-nav ul li.active > a, .about-page .fh5co-nav ul li a:hover, .about-page .fh5co-nav ul li a:focus {
+.light-page .fh5co-nav ul li.active > a, .light-page .fh5co-nav ul li a:hover {
   color: #D27B00;
 }
 
 
- .about-page .fh5co-nav #fh5co-logo a {
+ .light-page .fh5co-nav #fh5co-logo a {
   color: #D27B00;
   text-shadow:  0px 0px 4px #fff, 0px 0px 5px #fff,  0px 0px 2px #fff, 0px 0px 3px #fff, 0px 0px 4px #fff, 0px 0px 2px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 2px #fff,  0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 2px #fff;
 }
 
-.about-page .fh5co-nav a, .about-page .fh5co-nav #fh5co-logo a > span {
+.light-page .fh5co-nav a, .light-page .fh5co-nav #fh5co-logo a > span {
   color: #222;
   text-shadow:  0px 0px 4px #fff, 0px 0px 5px #fff,  0px 0px 2px #fff, 0px 0px 3px #fff, 0px 0px 4px #fff,0px 0px 2px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 2px #fff,  0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 2px #fff;
 }
 
- .about-page #fh5co-header h2 span {
+ .light-page #fh5co-header h2 span {
   text-shadow: 0px 0px 4px #fff, 0px 0px 5px #fff,   0px 0px 2px #fff ,0px 0px 2px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 2px #fff, 0px 0px 3px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 2px #fff;
   color: rgb(216, 126, 0);
 }
- .about-page #fh5co-header h1 span {
+ .light-page #fh5co-header h1 span {
   text-shadow:0px 0px 4px #fff, 0px 0px 5px #fff,   0px 0px 2px #fff, 0px 0px 2px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 3px #fff , 0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 2px #fff, 0px 0px 2px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 3px #fff , 0px 0px 3px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 2px #fff;
   color: rgb(216, 126, 0);
 }
@@ -208,7 +212,7 @@ color: #E78800;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
-.fh5co-nav ul li a:hover, .fh5co-nav ul li a:focus, .fh5co-nav ul li a:active, .fh5co-nav ul li.active > a {
+.fh5co-nav ul li a:hover, .fh5co-nav ul li a:active, .fh5co-nav ul li.active > a {
   color: rgba(234, 146, 21);
   color: rgb(236, 181, 105);
   color: #EA9215;
@@ -553,6 +557,19 @@ color: #E78800;
   clear: both;
 }
 
+#fh5co-links {
+  padding: 7em 0;
+  clear: both;
+}
+
+#fh5co-links a {
+  color: #222;
+  text-decoration: underline;
+}
+#fh5co-links a:hover {
+  color: #EA9215;
+  text-decoration: none;
+}
 
 #fh5co-footer .footer-menu,  #fh5co-footer .fh5co-contact-info{
   padding-top: 1em;
@@ -573,7 +590,10 @@ color: #E78800;
   #fh5co-started,
   #fh5co-project,
   #fh5co-blog,
-  #fh5co-contact,
+  #fh5co-contact {
+    padding: 6em 0 4em;
+  }
+
   #fh5co-footer {
     padding: 3em 0;
   }
@@ -608,9 +628,8 @@ color: #E78800;
   margin-bottom: .3em;
 }
 .fh5co-counters .fh5co-counter-label {
-  color: rgba(0, 0, 0, 0.5);
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: 5px;
   margin-bottom: 2em;
   display: block;
@@ -652,7 +671,7 @@ color: #E78800;
 .mt .list-nav li i {
   position: absolute;
   left: 0;
-  top: 0;
+  top: 6px;
   font-size: 18px;
   color: #EA9215;
 }
@@ -847,9 +866,7 @@ color: #E78800;
   color: #000;
 }
 .fh5co-heading p {
-  font-size: 20px;
   line-height: 1.5;
-  color: #828282;
 }
 .fh5co-heading span {
   display: block;
@@ -896,7 +913,9 @@ color: #E78800;
   #fh5co-testimonial .testimony-slide blockquote {
     width: 100%;
   }
- #fh5co-explore .fh5co-explore img.img-responsive {padding-bottom: 40px;}
+ img.img-responsive {
+    padding-bottom: 30px;
+  }
 }
 #fh5co-testimonial .arrow-thumb {
   position: absolute;
@@ -908,7 +927,7 @@ color: #E78800;
   font-size: 32px;
   color: #dadada;
 }
-#fh5co-testimonial .arrow-thumb a:hover, #fh5co-testimonial .arrow-thumb a:focus, #fh5co-testimonial .arrow-thumb a:active {
+#fh5co-testimonial .arrow-thumb a:hover, #fh5co-testimonial .arrow-thumb a:active {
   text-decoration: none;
 }
 
@@ -1096,6 +1115,8 @@ color: #E78800;
 .fh5co-blog > a img {
   width: 100%;
 }
+
+
 @media screen and (max-width: 768px) {
   .fh5co-blog {
     width: 100%;
@@ -1440,7 +1461,7 @@ color: #E78800;
   background: #fff;
 }
 
-#about-page .fh5co-nav-toggle.fh5co-nav-white > i, #about-page .fh5co-nav-toggle.fh5co-nav-white > i::before, #about-page .fh5co-nav-toggle.fh5co-nav-white > i::after {
+#light-page .fh5co-nav-toggle.fh5co-nav-white > i, #light-page .fh5co-nav-toggle.fh5co-nav-white > i::before, #light-page .fh5co-nav-toggle.fh5co-nav-white > i::after {
   background: #D27B00;
 }
 
@@ -1461,7 +1482,7 @@ color: #E78800;
   bottom: -10px;
 }
 
-#about-page .fh5co-nav-toggle.fh5co-nav-white.active > i,  .fh5co-nav-toggle.active i {
+#light-page .fh5co-nav-toggle.fh5co-nav-white.active > i,  .fh5co-nav-toggle.active i {
   background: transparent;
 }
 
@@ -1659,15 +1680,22 @@ color: #E78800;
 .form-control {
   box-shadow: none;
   background: transparent;
-  border: 2px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid #555;
   height: 54px;
   font-size: 18px;
   font-weight: 300;
+  color: #000;
 }
+
+.form-control::placeholder {
+  color: #666;
+}
+
 .form-control:active, .form-control:focus {
   outline: none;
   box-shadow: none;
   border-color: #EA9215;
+  border-width: 2px;
 }
 
 .row-pb-sm {
