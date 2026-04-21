@@ -95,7 +95,7 @@ h1, h2, h3, h4, h5, h6, figure {
 background: #00000055;
 }
 #light-page .fh5co-nav {
-background: #EEEC;
+background: #EEE9;
 }
 #light-page #fh5co-header h1 span, #light-page  #fh5co-header h2 span {
 background: #EEEA;
@@ -173,12 +173,12 @@ color: #E78800;
 
  .light-page .fh5co-nav #fh5co-logo a {
   color: #D27B00;
-  text-shadow:  0px 0px 4px #fff, 0px 0px 5px #fff,  0px 0px 2px #fff, 0px 0px 3px #fff, 0px 0px 4px #fff, 0px 0px 2px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 2px #fff,  0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 2px #fff;
+  text-shadow:  0px 0px 1px #fff, 0px 0px 2px #fff, 0px 0px 3px #fff, 0px 0px 2px #fff, 0px 0px 2px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff;
 }
 
 .light-page .fh5co-nav a, .light-page .fh5co-nav #fh5co-logo a > span {
   color: #222;
-  text-shadow:  0px 0px 4px #fff, 0px 0px 5px #fff,  0px 0px 2px #fff, 0px 0px 3px #fff, 0px 0px 4px #fff,0px 0px 2px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 2px #fff,  0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 2px #fff;
+  text-shadow:  0px 0px 1px #fff, 0px 0px 2px #fff, 0px 0px 3px #fff, 0px 0px 2px #fff, 0px 0px 2px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff, 0px 0px 1px #fff;
 }
 
  .light-page #fh5co-header h2 span {
@@ -1463,6 +1463,17 @@ color: #E78800;
 
 #light-page .fh5co-nav-toggle.fh5co-nav-white > i, #light-page .fh5co-nav-toggle.fh5co-nav-white > i::before, #light-page .fh5co-nav-toggle.fh5co-nav-white > i::after {
   background: #D27B00;
+  border-top:1px solid white;
+  border-bottom: 1px solid white;
+  height: 4px;
+}
+
+#light-page .fh5co-nav-toggle.fh5co-nav-white > i::before {
+  top: -8px
+}
+
+#light-page .fh5co-nav-toggle.fh5co-nav-white > i::after {
+  bottom: -8px;
 }
 
 
