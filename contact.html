@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -80,7 +80,7 @@
             <div class="col-md-6 animate-box" style="padding-bottom: 20px">
               <img
                 alt="contact"
-				style="border-radius: 4px;"
+                style="border-radius: 4px"
                 class="img-responsive"
                 src="images/contact.jpg"
               />
@@ -149,7 +149,19 @@
                   </button>
                 </div>
               </form>
-              <div id="result" style="font-size: 21px; color: #444"></div>
+
+              <div id="result">
+                <img style="display: none" src="images/loader.gif" /><span
+                  style="
+                    display: none;
+					font-size: 25px;
+                    background: #00c916;
+                    color: white;
+                    padding: 15px;
+                    border-radius: 6px;
+                  "
+                ></span>
+              </div>
 
               <script>
                 const forminit = new Forminit();
@@ -160,47 +172,55 @@
                   .addEventListener("submit", async (e) => {
                     e.preventDefault();
 
+                    const result = document.getElementById("result");
+                    const loadingImg = result.getElementsByTagName("img")[0];
+                    const resultText = result.getElementsByTagName("span")[0];
+                    resultText.textContent = "";
+                    resultText.style.display = "none";
+                    loadingImg.style.display = "block";
+
                     const formData = new FormData(e.target);
                     const { data, error } = await forminit.submit(
                       FORM_ID,
                       formData,
                     );
 
-                    const result = document.getElementById("result");
-
+                    loadingImg.style.display = "none";
+                    resultText.style.display = "block";
                     if (error) {
-                      result.textContent = error.message;
+                      resultText.textContent = error.message;
                       return;
                     }
 
-                    result.textContent = "Message sent successfully!";
+                    resultText.textContent =
+                      "SUCCESS!! We’ve got your message in our captain’s log";
                     e.target.reset();
                   });
               </script>
-			  <script>
-				(function () {
-				// Set subjects map:
-				 const subjectMap = {
-					holidays: 'Sailing Holidays',
-					training: 'Yacht Training',
-					delivery: "Yacht Delivery"
-				};
+              <script>
+                (function () {
+                  // Set subjects map:
+                  const subjectMap = {
+                    holidays: "Sailing Holidays",
+                    training: "Yacht Training",
+                    delivery: "Yacht Delivery",
+                  };
 
-				// Get URL parameters
-				const params = new URLSearchParams(window.location.search);
+                  // Get URL parameters
+                  const params = new URLSearchParams(window.location.search);
 
-				// Get "subject" value
-				const subjectKey = params.get("subject");
-				let subject = undefined;
-				if (subjectKey) {
-				  subject = subjectMap[subjectKey];
-				}
-				// If it exists, put it into the input field
-				if (subject) {
-					document.getElementById("subject").value = subject;
-				}
-			})();
-			  </script>
+                  // Get "subject" value
+                  const subjectKey = params.get("subject");
+                  let subject = undefined;
+                  if (subjectKey) {
+                    subject = subjectMap[subjectKey];
+                  }
+                  // If it exists, put it into the input field
+                  if (subject) {
+                    document.getElementById("subject").value = subject;
+                  }
+                })();
+              </script>
             </div>
           </div>
         </div>
@@ -223,7 +243,7 @@
               <ul class="fh5co-footer-links">
                 <li><a href=".">Home</a></li>
                 <li><a href="about.html">About</a></li>
-				<li><a href="gallery.html">Gallery</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="sources.html">Sources</a></li>
                 <li><a href="contact.html">Contact</a></li>
               </ul>
