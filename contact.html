@@ -143,25 +143,25 @@
                     ></textarea>
                   </div>
                 </div>
+                <div id="result">
+                  <img style="display: none" src="images/loader.gif" /><span
+                    style="
+                      display: none;
+                      font-size: 25px;
+                      background: #00c916;
+                      color: white;
+                      padding: 15px;
+                      margin-bottom: 10px;
+                      border-radius: 6px;
+                    "
+                  ></span>
+                </div>
                 <div class="form-group">
                   <button type="submit" class="btn btn-primary">
                     Send Message
                   </button>
                 </div>
               </form>
-
-              <div id="result">
-                <img style="display: none" src="images/loader.gif" /><span
-                  style="
-                    display: none;
-					font-size: 25px;
-                    background: #00c916;
-                    color: white;
-                    padding: 15px;
-                    border-radius: 6px;
-                  "
-                ></span>
-              </div>
 
               <script>
                 const forminit = new Forminit();
@@ -192,8 +192,8 @@
                       return;
                     }
 
-                    resultText.textContent =
-                      "SUCCESS!! We’ve got your message in our captain’s log";
+                    resultText.innerHTML =
+                      "SUCCESS!! <br>We’ve got your message in our captain’s log.";
                     e.target.reset();
                   });
               </script>
