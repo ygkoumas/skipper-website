@@ -9,8 +9,9 @@ let currentIndex = 0;
 
 function openLightbox(index) {
   currentIndex = index;
-  lightboxImg.src = items[currentIndex].src;
-  lightboxImg.alt = items[currentIndex].alt;
+  const item = items[currentIndex];
+  lightboxImg.src = item.dataset.full || item.src;
+  lightboxImg.alt = item.alt;
   lightbox.classList.add("open");
   document.body.style.overflow = "hidden";
 }
